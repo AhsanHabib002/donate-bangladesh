@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- Font Family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com">   
+    </script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lexend">
+    <header>
+        <div class="navbar bg-[#F9F7F3] p-[30px]">
+            <div class="navbar-start">
+                <button id="homeBtn" class="btn bg-[#B4F461]">Home</button>
+            </div>
+            <div class="navbar-center flex flex-row gap-[15px]">
+                <img src="assets/logo.png" alt="donate logo">
+              <a class="text-xl font-semibold">Donate bangladesh</a>
+            </div>
+            <div class="navbar-end">
+                <div class="flex flex-row gap-[12px]">
+                    <img src="assets/coin.png" alt="coin">
+                    <p id="account-balance" class="font-semibold ">9000</p>
+                    <p class="font-semibold ">BDT</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="max-w-[1040px] mx-auto mt-[60px] ">
+                <div class="collapse collapse-arrow bg-base-200 mb-[30px] ">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                      <p>The Document Object Model (DOM) provides a programming interface for web content. It represents the page, allowing applications to modify the document's structure, design, and content.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200 mb-[30px]">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                      <p>There are common 5ways to select an element from the dom. 1. getElementByID, 2.getElementsByClassName, 3.getElementsByTagName, 4. querySelector, 5. querySelectorAll</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200 mb-[30px]">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                      <p>Event delegation is the technique of employing event propagation to handle events at a higher level in the DOM than the element where the event originated. It enables us to link a single event listener to items that exist now or in the future.</p>
+                    </div>
+                  </div>
+                
+                  <div class="collapse collapse-arrow bg-base-200 mb-[30px]">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                      <p>I can do this by using the event handler methos to change the input element's style when a event occur.</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('homeBtn')
+    .addEventListener('click', function(){
+    window.location.href = './home.html'
+  })
+    </script>
+</body>
+</html>
